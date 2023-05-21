@@ -20,6 +20,7 @@
 
 p {
     font-size: 18px;
+    font-weight: 500;
 }
 
 .page {
@@ -34,7 +35,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 65vh;
+    height: 70vh;
     width: 50vw;
     border-radius: 25px;
     box-shadow: 15px 15px 5px var(--pale-blue);
@@ -49,16 +50,7 @@ p {
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.card.right {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -67,7 +59,108 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px;
-    border-radius: 100%;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
     background-image: var(--gradient-circle);
+}
+
+.score h2{
+    font-size: 72px;
+    font-weight: 800;
+}
+
+.score p {
+    color: var(--light-lavender);
+}
+
+.comment {
+    text-align: center;
+    width: 75%;
+    color: var(--light-lavender);
+}
+
+
+.card.right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.category {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.category div {
+    display: flex;
+    gap: 10px;
+}
+
+#visual {
+    color: var(--primary-blue);
+}
+
+#verbal {
+    color: var(--primary-green);
+}
+
+#memory {
+    color: var(--primary-yellow);
+}
+
+#reaction {
+    color: var(--primary-red);
+}
+
+.total {
+    color: var(--light-lavender)
+}
+
+.reaction {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.verbal {
+    padding: 15px;
+    background-color: hsla(166, 100%, 37%,0.1);
+    border-radius: 5px;
+}
+
+.visual {
+    padding: 15px;
+    background-color: hsla(234, 85%, 45%,0.1);
+    border-radius: 5px;
+}
+
+.memory {
+    padding: 15px;
+    background-color: hsla(39, 100%, 56%,0.1);
+    border-radius: 5px;
+}
+
+.card.right button {
+    margin-bottom: 25px;
+    border: 0;
+    width: 80%;
+    font-size: 18px;
+    padding: 15px 0;
+    background-color: var(--dark-gray-blue);
+    color: var(--neutral-white);
+    border-radius: 50px;
+    transition: 0.5s ease-in;
+}
+
+.card.right button:hover {
+    cursor: pointer;
+}
+
+.card.right button:active{
+   background-image: var(--gradient-background);
 }
