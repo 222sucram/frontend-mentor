@@ -116,7 +116,7 @@ button:hover {
     .container{
         width: 375px;
         height: 100vh;
-      
+        margin: 0;
         flex-direction: column;
         border-radius: 0;
     }
@@ -132,7 +132,7 @@ button:hover {
         border-radius: none;
     }
     h1 {
-        font-size: 18px;
+        font-size: 25px;
     }
     p{
         font-size: 12px;
