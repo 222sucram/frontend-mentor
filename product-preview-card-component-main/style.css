@@ -13,8 +13,7 @@
 
 body {
     background-color: var(--cream);
-    width: 100vw;
-    height: 100vh;
+    overflow: hidden;
 }
 
 p, s {
@@ -115,21 +114,27 @@ button:hover {
 
 @media (max-width: 375px) {
     .container{
-        width: 100vw;
+        width: 375px;
         height: 100vh;
-        margin: 0;
+      
         flex-direction: column;
-        border-radius: none;
+        border-radius: 0;
     }
     .left {
-        height: 50%;
+        height: 40%;
         width: 100vw;
-        border-radius: none;
+        border-radius: 0;
         background-size: cover;
     }
     .right {
-        height: 50%;
+        height: 60%;
         width: 100vw;
         border-radius: none;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    p{
+        font-size: 12px;
     }
 }
