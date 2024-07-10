@@ -20,20 +20,43 @@ body {
 }
 
 .banner {
-    width: 100vw;
+    width: 1439px;
     height: 324px;
     background-color: var(--dark-purple);
+    background-image: url(assets/images/background-pattern-desktop.svg);
     position: relative;
     top: 0;
 }
 
 .faq-card {
     width: 600px;
-    height: 400px;
-    background-color: blue;
+    height: 600px;
+    background-color: var(--white);
     position: absolute;
-    left: 25%;
-    top: 100px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.card-title {
+    border: 1px solid black;
+    margin-top: 10%;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.icon-star{
+    padding-right: 15px;
+}
+
+
+
 
 
