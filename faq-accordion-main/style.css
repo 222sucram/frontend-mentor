@@ -5,12 +5,18 @@
     --dark-purple: hsl(292, 42%, 14%); 
 }
 
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/fonts/WorkSans-VariableFont_wght.ttf');
+}
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
 }
+
 
 body {
     height: 904px;
@@ -21,7 +27,7 @@ body {
 
 .banner {
     width: 1439px;
-    height: 324px;
+    height: 320px;
     background-color: var(--dark-purple);
     background-image: url(assets/images/background-pattern-desktop.svg);
     position: relative;
@@ -30,7 +36,7 @@ body {
 
 .faq-card {
     width: 600px;
-    height: 600px;
+    height: 565px;
     background-color: var(--white);
     position: absolute;
     left: 50%;
@@ -39,24 +45,53 @@ body {
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    gap: 50px;
 }
 
 .card-title {
-    border: 1px solid black;
     margin-top: 10%;
     width: 90%;
     display: flex;
     justify-content: flex-start;
-
+    color: var(--dark-purple);
+    font-size: 28px;
 }
 
 .icon-star{
     padding-right: 15px;
 }
 
+.card-content {
+    width: 90%;
+}
 
+.card-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.card-item {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    font-weight: 600;
+    flex-wrap: wrap;
+    color: var(--dark-purple);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 
+.card-info {
+    color: var(--grayish-purple);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+ul {
+    height: 375px;
+}
 
