@@ -117,6 +117,10 @@ body {
     cursor: pointer;
 }
 
+.btn-container:focus {
+    border: 1px solid black;
+}
+
 .card-info {
     color: var(--grayish-purple);
     font-size: 16px;
