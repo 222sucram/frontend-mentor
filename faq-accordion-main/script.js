@@ -1,24 +1,14 @@
-const [...buttons] = document.querySelectorAll('.btn')
-const [...itemInfo] = document.querySelectorAll('.card-info')
-
-
-// loop thru arr
+buttons = [...document.querySelectorAll('.btn-container')];
 
 buttons.forEach(btn => {
     btn.addEventListener('click', (e) => {
         buttons.forEach(btn => {
-            btn.src = 'assets/images/icon-plus.svg'
+            if(btn != e.target) {
+                btn.classList.remove('active')
+                btn.nextElementSibling.classList.add('hide')
+            }
         })
-        e.target.src = 'assets/images/icon-minus.svg'
-        console.log(e.target.previousElementSibling)
+        e.target.classList.toggle('active')
+        e.target.nextElementSibling.classList.toggle('hide')
     })
-})
-
-// attach event listen toggle class add/remove
-
-// on toggle set all items to hide
-
-// then set the clicked item to not hide
-
-// 
-
+});

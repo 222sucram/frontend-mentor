@@ -97,7 +97,23 @@ body {
     color: #AD28EB;
 }
 
-.btn:hover {
+.btn-container {
+    background-image: url(assets/images/icon-plus.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40px;
+    width: 40px;
+}
+
+.btn-container.active {
+    background-image: url(assets/images/icon-minus.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40px;
+    width: 40px;
+}
+
+.btn-container:hover {
     cursor: pointer;
 }
 
