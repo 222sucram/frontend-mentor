@@ -1,4 +1,5 @@
 buttons = [...document.querySelectorAll('.btn-container')];
+titles = [...document.querySelectorAll('.item-title')]
 
 buttons.forEach(btn => {
     btn.addEventListener('click', (e) => {
@@ -14,17 +15,21 @@ buttons.forEach(btn => {
     
     btn.addEventListener('keyup', (e) => {
         if(e.code == 'Enter') {
-            console.log(e.target)
             buttons.forEach(btn => {
-                btn.classList.remove('active')
-                btn.nextElementSibling.classList.add('hide')
+                if(btn !== e.target) {
+                    btn.classList.remove('active')
+                    btn.nextElementSibling.classList.add('hide')
+                }
             })
             e.target.classList.toggle('active')
             btn.nextElementSibling.classList.toggle('hide')
-            
-
-            // try set status of target
-            // then loop thru all btns and deactivate
         }
     })
 });
+
+titles.forEach(title => {
+    title.addEventListener('click', (e) => {
+        button = e.target.nextElementSibling
+        console.log(button.nextElementSibling)
+    })
+})
