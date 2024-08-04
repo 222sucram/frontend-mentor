@@ -1,5 +1,6 @@
 buttons = [...document.querySelectorAll('.btn-container')];
 titles = [...document.querySelectorAll('.item-title')]
+information = [...document.querySelectorAll('.card-info')]
 
 buttons.forEach(btn => {
     btn.addEventListener('click', (e) => {
@@ -30,6 +31,23 @@ buttons.forEach(btn => {
 titles.forEach(title => {
     title.addEventListener('click', (e) => {
         button = e.target.nextElementSibling
-        console.log(button.nextElementSibling)
+        text = button.nextElementSibling
+
+        buttons.forEach(btn => {
+            btn.classList.remove('active')
+        })
+        information.forEach(txt => {
+            txt.classList.add('hide')
+        })
+        button.classList.add('active')
+        text.classList.remove('hide')
+        
     })
 })
+
+
+// To do
+
+// make desisng responsive to different screen sizes
+
+// deploy on github pages
